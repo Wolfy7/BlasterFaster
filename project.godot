@@ -1,0 +1,40 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[  ]
+_global_script_class_icons={
+
+}
+
+[application]
+
+config/name="BlasterFaster_Angega Studios"
+run/main_scene="res://stages/stage_menu.tscn"
+config/icon="res://icon.png"
+
+[autoload]
+
+utils="*res://scripts/utils.gd"
+game="*res://scripts/game.gd"
+audio_player="*res://scenes/audio_player.tscn"
+
+[display]
+
+window/size/width=180
+window/size/height=320
+window/size/test_width=360
+window/size/test_height=640
+window/stretch/mode="2d"
+window/stretch/aspect="keep"
+
+[rendering]
+
+environment/default_clear_color=Color( 0.234595, 0.0292053, 0.257813, 1 )
+environment/default_environment="res://default_env.tres"
